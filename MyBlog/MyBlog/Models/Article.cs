@@ -10,7 +10,7 @@ namespace MyBlog.Models
     {
         public Article()
         {
-
+            Date = DateTime.Now;
         }
 
         public int ID { get; set; }
