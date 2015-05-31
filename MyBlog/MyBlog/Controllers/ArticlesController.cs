@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using MyBlog.DAL;
 using MyBlog.Models;
+using PagedList;
 
 namespace MyBlog.Controllers
 {
@@ -16,9 +17,11 @@ namespace MyBlog.Controllers
         private ArticleContext db = new ArticleContext();
 
         // GET: Articles
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
-            return View(db.Articles.ToList());
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+            return View(db.Articles.OrderBy(x => x.Date).ToPagedList(pageNumber,pageSize));
         }
 
         // GET: Articles/Details/5
