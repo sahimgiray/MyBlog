@@ -52,3 +52,6 @@ C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.
 C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.dll
 C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.pdb
+C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\CKFinder.dll
+C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\CKFinder.pdb
+C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.csprojResolveAssemblyReference.cache
