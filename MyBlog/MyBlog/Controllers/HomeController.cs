@@ -15,7 +15,7 @@ namespace MyBlog.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Şahım Giray Kıvanç";
 
             return View();
         }
