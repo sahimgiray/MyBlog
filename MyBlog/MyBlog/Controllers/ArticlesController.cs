@@ -47,6 +47,7 @@ namespace MyBlog.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [ValidateInput(false)]
         public ActionResult Create([Bind(Include = "ID,Title,Date,Author,Content")] Article article)
         {
             if (ModelState.IsValid)
@@ -79,6 +80,7 @@ namespace MyBlog.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [ValidateInput(false)]
         public ActionResult Edit([Bind(Include = "ID,Title,Date,Author,Content")] Article article)
         {
             if (ModelState.IsValid)
