@@ -54,4 +54,7 @@ C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.dll
 C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.pdb
 C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\CKFinder.dll
 C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\CKFinder.pdb
-C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\PagedList.dll
+C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\PagedList.Mvc.dll
+C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\PagedList.xml
+C:\Users\User\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\PagedList.Mvc.xml

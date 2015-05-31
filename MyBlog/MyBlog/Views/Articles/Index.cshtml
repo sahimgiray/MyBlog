@@ -1,5 +1,7 @@
-﻿@model IEnumerable<MyBlog.Models.Article>
-
+﻿@*@model IEnumerable<MyBlog.Models.Article>*@
+@model PagedList.IPagedList<MyBlog.Models.Article>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 @{
     ViewBag.Title = "Index";
 }
@@ -12,16 +14,20 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Title)
+            @*@Html.DisplayNameFor(model => model.Title)*@
+            Title
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Date)
+            @*@Html.DisplayNameFor(model => model.Date)*@
+            Date
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Author)
+            @*@Html.DisplayNameFor(model => model.Author)*@
+            Author
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Content)
+            @*@Html.DisplayNameFor(model => model.Content)*@
+            Content
         </th>
         <th></th>
     </tr>
@@ -49,3 +55,7 @@
 }
 
 </table>
+
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
